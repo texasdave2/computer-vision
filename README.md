@@ -26,9 +26,19 @@ In order to understand what's going on with this style of face detection, I high
 https://docs.opencv.org/3.0-beta/doc/py_tutorials/py_objdetect/py_face_detection/py_face_detection.html
 
 # How to use this script on Rasbian Stretch
-0)  You absolutely MUST have CV2 installed.  To check and see if it is there do this:
-type:
-python 
+0)  You absolutely MUST have CV2 installed.  To check and see if it is there first enter your python shell:
+'''
+python
+'''
+then type the following commands:
+'''
+import cv2
+cv2.__version__
+'''
+Should return the version you are using, the one I used was 3.3.0
+CTRL-D to exit python.
+
+
 1)  Open a terminal.  In your shell, change directory to your downloads or some directory to bring these files into
 2)  You'll be making a self-contained folder in that directory of these files with the next step
 3)  Clone this git into that directory by typing:  

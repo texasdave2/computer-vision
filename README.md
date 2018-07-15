@@ -53,7 +53,7 @@ python rpi_face_detect.py
 ```
 
 # What SHOULD happen:
-Your camera light should turn on and a window will pop up displaying the video feed.  You need to have the FRONT of your face looking into the camera and it will draw a green bounding box around it.  The response time is pretty decent considering the simplicity of the entire system.  It isn't incredibly smooth but like I said, it gets the job done.
+Your camera light should turn on and a window will pop up displaying the video feed.  You need to have the FRONT of your face looking into the camera and it will draw a green bounding box around it like the image below.  You can delete this image from the directory, it is not used.
 
 ![alt text](face_dave.jpg "Face detection")
 

@@ -36,7 +36,7 @@ import cv2
 cv2.__version__
 ```
 This will return the version you are using, the one I used was 3.3.0
-CTRL-D to exit python.
+<kbd>CTRL</kbd>  <kbd>D</kbd> to exit python.
 
 # Now that the boring stuff is over...
 
@@ -59,8 +59,7 @@ Your camera light should turn on and a window will pop up displaying the video f
 
 
 # How to quit
-Simply press the 'q' key on the keyboard
-<kbd>^D</kbd>
+Simply press the 'q' key on the keyboard  <kbd>Q</kbd>
 
 # What's going on, how does this work?
 The first thing you might have noticed if you looked at the files in this git is the xml file:  "haarcascade_frontalface_default.xml".  The name sort of says what it does, it contains almost a full megabyte of parameters regarding front-of-face analytics.  This is a pre-baked data file from OpenCV and is used to compare image data you feed it with the call to "faceCascade" in the python script.  There are other Haar Cascade files for different things located here:

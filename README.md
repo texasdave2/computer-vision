@@ -1,9 +1,6 @@
 # Raspberry Pi Face Detector
-<center>
 
 ![alt text](face_dave.jpg "Face detection")
-
-</center>
 
 
 ## A small python-based OpenCV Haar Cascade frontal face detector for the Raspberry Pi 3 camera module

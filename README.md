@@ -27,16 +27,6 @@ https://github.com/shantnu/Webcam-Face-Detect
 # Installing PiCamera library
 At your terminal shell, type the following commands:
 ```
-sudo apt-get update
-sudo apt-get upgrade
-```
-Then, follow this with:
-```
-sudo apt-get update
-sudo apt-get install python-picamera python3-picamera
-```
-You can of course use pip:
-```
 sudo pip install picamera
 ```
 

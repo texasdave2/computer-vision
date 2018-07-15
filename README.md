@@ -22,10 +22,6 @@ Monitor, mouse, keyboard
 To install CV2 library on Rasbian Stretch, definitely check out Adrian's incredibly detailed install tutorial and buy his book:
 https://www.pyimagesearch.com/2017/09/04/raspbian-stretch-install-opencv-3-python-on-your-raspberry-pi/
 
-# About face detection
-In order to understand what's going on with this style of face detection, I highly recommend you read about the OpenCV library and face detection using Haar Cascades:
-
-https://docs.opencv.org/3.0-beta/doc/py_tutorials/py_objdetect/py_face_detection/py_face_detection.html
 
 # How to use this script on Rasbian Stretch
 0)  You absolutely MUST have CV2 installed.  To check and see if it is there first enter your python shell:
@@ -60,5 +56,13 @@ Your camera light should turn on and a window will pop up displaying the video f
 # How to quit
 Simply press the 'q' key on the keyboard
 
+# What's going on, how does this work?
+The first thing you might have noticed if you looked at the files in this git is the xml file:  "haarcascade_frontalface_default.xml".  The name sort of says what it does, it contains almost a full megabyte of parameters regarding front-of-face analytics.  This is a pre-baked data file from OpenCV and is used to compare image data you feed it with the call to "faceCascade" in the python script.  There are other Haar Cascade files for different things located here:
+
+https://github.com/opencv/opencv/tree/master/data/haarcascades
+
+In order to understand what's going on with this style of face detection, I highly recommend you read about the OpenCV library and face detection using Haar Cascades:
+
+https://docs.opencv.org/3.0-beta/doc/py_tutorials/py_objdetect/py_face_detection/py_face_detection.html
 
 

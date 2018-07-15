@@ -69,4 +69,10 @@ In order to understand what's going on with this style of face detection, I high
 
 https://docs.opencv.org/3.0-beta/doc/py_tutorials/py_objdetect/py_face_detection/py_face_detection.html
 
+# To the future and beyond!
+If this doesn't work on your device as I've outlined, holler at me through git and let's work on it.  I'm hoping with time I'd like to add the following functionality:
+- upon initial detection trigger an action
+- upon detection for a specific amount of time, trigger an action
+
+
 

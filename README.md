@@ -14,11 +14,11 @@ https://github.com/shantnu/Webcam-Face-Detect
 
 
 # Pre-requisites:  (what I used)
-*Raspberry Pi 3 B+   (but if your Pi can run CV2, you'll be fine)
-*Camera module V2 (this one:  https://www.raspberrypi.org/products/camera-module-v2/)  
-*OS is Rasbian Stretch, latest as of 2018
-*CV2 library installed
-*Monitor, mouse, keyboard
+- Raspberry Pi 3 B+   (but if your Pi can run CV2, you'll be fine)
+- Camera module V2 (this one:  https://www.raspberrypi.org/products/camera-module-v2/)  
+- OS is Rasbian Stretch, latest as of 2018
+- CV2 library installed
+- Monitor, mouse, keyboard
 
 # Installing CV2
 To install CV2 library on Rasbian Stretch, definitely check out Adrian's incredibly detailed install tutorial and buy his book:
@@ -36,6 +36,7 @@ import cv2
 cv2.__version__
 ```
 This will return the version you are using, the one I used was 3.3.0
+
 <kbd>CTRL</kbd>  <kbd>D</kbd> to exit python.
 
 # Now that the boring stuff is over...

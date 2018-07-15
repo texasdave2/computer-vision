@@ -3,7 +3,7 @@
 A small python-based OpenCV Haar Cascade frontal face detector for the Raspberry Pi 3 camera module
 
 # Purpose:  
-With only 2 libraries (cv2 and time) you can run this!  Very few scripts exist out there that are lean enough with few dependencies to do reasonable facial detection.  Most require you to install bulky libraries or are simply too CPU intensive for a Raspberry Pi.  After installing and trying lots of these scripts (with little or no success) I found two that when merged with some edits will get the job done.  This is basic face detection folks, but it's pretty decent and very tweakable. 
+With only 3 libraries (cv2, time and picamera) you can run this!  Very few scripts exist out there that are lean enough with few dependencies to do reasonable facial detection.  Most require you to install bulky libraries or are simply too CPU intensive for a Raspberry Pi.  After installing and trying lots of these scripts (with little or no success) I found two that when merged with some edits will get the job done.  This is basic face detection folks, but it's pretty decent and very tweakable. 
 
 # Code citations:  
 - Picamera activation snippet from Adrian's Picamera + OpenCV + Python + Raspberry Pi 
@@ -18,7 +18,24 @@ https://github.com/shantnu/Webcam-Face-Detect
 - Camera module V2 (this one:  https://www.raspberrypi.org/products/camera-module-v2/)  
 - OS is Rasbian Stretch, latest as of 2018
 - CV2 library installed
+- PiCamera library installed
 - Monitor, mouse, keyboard
+
+# Installing PiCamera library
+At your terminal shell, type the following commands:
+```
+sudo apt-get update
+sudo apt-get upgrade
+```
+Then, follow this with:
+```
+sudo apt-get update
+sudo apt-get install python-picamera python3-picamera
+```
+You can of course use pip:
+```
+sudo pip install picamera
+```
 
 # Installing CV2
 To install CV2 library on Rasbian Stretch, definitely check out Adrian's incredibly detailed install tutorial and buy his book:

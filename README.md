@@ -1,4 +1,5 @@
-# raspberry_pi_face_detector
+# Raspberry Pi Face Detector
+
 A small python-based OpenCV Haar Cascade frontal face detector for the Raspberry Pi 3 camera module
 
 # Purpose:  

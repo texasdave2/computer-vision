@@ -14,11 +14,11 @@ https://github.com/shantnu/Webcam-Face-Detect
 
 
 # Pre-requisites:  (what I used)
-Raspberry Pi 3 B+   (but if your Pi can run CV2, you'll be fine)
-Camera module V2 (this one:  https://www.raspberrypi.org/products/camera-module-v2/)  
-OS is Rasbian Stretch, latest as of 2018
-CV2 library installed
-Monitor, mouse, keyboard
+*Raspberry Pi 3 B+   (but if your Pi can run CV2, you'll be fine)
+*Camera module V2 (this one:  https://www.raspberrypi.org/products/camera-module-v2/)  
+*OS is Rasbian Stretch, latest as of 2018
+*CV2 library installed
+*Monitor, mouse, keyboard
 
 # Installing CV2
 To install CV2 library on Rasbian Stretch, definitely check out Adrian's incredibly detailed install tutorial and buy his book:
@@ -60,6 +60,7 @@ Your camera light should turn on and a window will pop up displaying the video f
 
 # How to quit
 Simply press the 'q' key on the keyboard
+<kbd>^D</kbd>
 
 # What's going on, how does this work?
 The first thing you might have noticed if you looked at the files in this git is the xml file:  "haarcascade_frontalface_default.xml".  The name sort of says what it does, it contains almost a full megabyte of parameters regarding front-of-face analytics.  This is a pre-baked data file from OpenCV and is used to compare image data you feed it with the call to "faceCascade" in the python script.  There are other Haar Cascade files for different things located here:

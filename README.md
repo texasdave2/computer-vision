@@ -37,8 +37,8 @@ You can of course use pip:
 sudo pip install picamera
 ```
 
-# Installing CV2
-To install CV2 library on Rasbian Stretch, definitely check out Adrian's incredibly detailed install tutorial and buy his book:
+# Installing CV2 - IMPORTANT
+OK, stop here...  CV2 is critical to this and it's something you're gonna want if you have a picamera.  The install is several steps so I'm going to direct you to another page for these steps.  To install CV2 library on Rasbian Stretch, definitely check out Adrian's incredibly detailed install tutorial and buy his book:
 https://www.pyimagesearch.com/2017/09/04/raspbian-stretch-install-opencv-3-python-on-your-raspberry-pi/
 
 

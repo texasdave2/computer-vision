@@ -19,12 +19,8 @@ time.sleep(0.1)
 cascPath = "haarcascade_frontalface_default.xml"
 faceCascade = cv2.CascadeClassifier(cascPath)
 
-
 # Capture frame-by-frame
-
 for frame in camera.capture_continuous(rawCapture, format="bgr", use_video_port=True):
-	# grab the raw NumPy array representing the image, then initialize the timestamp
-	# and occupied/unoccupied text
   image = frame.array
   gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
   faces = faceCascade.detectMultiScale(gray,scaleFactor=1.1,minNeighbors=5,minSize=(30, 30))
@@ -44,5 +40,3 @@ for frame in camera.capture_continuous(rawCapture, format="bgr", use_video_port=
   if key == ord("q"):
     cv2.destroyAllWindows()
     break
-
-

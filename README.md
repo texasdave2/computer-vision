@@ -1,7 +1,7 @@
 # raspberry_pi_face_detector
-A small python based OpenCV Haar Cascade face detector for the Raspberry Pi 3 camera module
+A small python-based OpenCV Haar Cascade frontal face detector for the Raspberry Pi 3 camera module
 
-Purpose:  With only 2 libraries (cv2 and time) you can run this!  Very few scripts exist out there that are lean enough with few dependencies to do reasonable facial detection.  Most require you to install bulky libraries or are simply too CPU intensive for a Raspberry Pi.  After installing and trying lots of these scripts (to little or no success) I found two that when merged with some edits work to get the job done.  Of course this is not an industrial quality face detector, but it's pretty slim, fast and able to be tweaked easily.  
+Purpose:  With only 2 libraries (cv2 and time) you can run this!  Very few scripts exist out there that are lean enough with few dependencies to do reasonable facial detection.  Most require you to install bulky libraries or are simply too CPU intensive for a Raspberry Pi.  After installing and trying lots of these scripts (with little or no success) I found two that when merged with some edits to get the job done.  Of course this is not an industrial quality face detector, it is for a "front-of-face" target only, but it's pretty slim, fast and able to be tweaked easily.  
 
 # Code citations:  
 - Picamera activation snippet from Adrian's Picamera + OpenCV + Python + Raspberry Pi 
@@ -13,8 +13,10 @@ https://github.com/shantnu/Webcam-Face-Detect
 
 # Pre-requisites:  (what I used)
 Raspberry Pi 3 B+   (but if your Pi can run CV2, you'll be fine)
+Camera module V2 (this one:  https://www.raspberrypi.org/products/camera-module-v2/)  
 OS is Rasbian Stretch, latest as of 2018
 CV2 library installed
+Monitor, mouse, keyboard
 
 # Installing CV2
 To install CV2 library on Rasbian Stretch, definitely check out Adrian's incredibly detailed install tutorial and buy his book:
@@ -27,20 +29,36 @@ https://docs.opencv.org/3.0-beta/doc/py_tutorials/py_objdetect/py_face_detection
 
 # How to use this script on Rasbian Stretch
 0)  You absolutely MUST have CV2 installed.  To check and see if it is there first enter your python shell:
-'''
+```
 python
-'''
+```
 then type the following commands:
-'''
+```
 import cv2
 cv2.__version__
-'''
-Should return the version you are using, the one I used was 3.3.0
+```
+This will return the version you are using, the one I used was 3.3.0
 CTRL-D to exit python.
 
+# Now that the boring stuff is over...
 
-1)  Open a terminal.  In your shell, change directory to your downloads or some directory to bring these files into
-2)  You'll be making a self-contained folder in that directory of these files with the next step
-3)  Clone this git into that directory by typing:  
+1)  Open a terminal shell, be in your normal users's directory and type the following (edit if desired):
+```
+cd Downloads
+git clone 
+```
+2)  Change directory into the new folder that was created
 
-2)  Change directory into the directory that was created
+3)  Run the script by typing:
+```
+python rpi_face_detect.py
+```
+
+# What SHOULD happen:
+Your camera light should turn on and a window will pop up displaying the video feed.  You need to have the FRONT of your face looking into the camera and it will draw a green bounding box around it.  The response time is pretty decent considering the simplicity of the entire system.  It isn't incredibly smooth but like I said, it gets the job done.
+
+# How to quit
+Simply press the 'q' key on the keyboard
+
+
+

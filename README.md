@@ -3,7 +3,7 @@
 A small python-based OpenCV Haar Cascade frontal face detector for the Raspberry Pi 3 camera module
 
 # Purpose:  
-With only 2 libraries (cv2 and time) you can run this!  Very few scripts exist out there that are lean enough with few dependencies to do reasonable facial detection.  Most require you to install bulky libraries or are simply too CPU intensive for a Raspberry Pi.  After installing and trying lots of these scripts (with little or no success) I found two that when merged with some edits to get the job done.  Of course this is not an industrial quality face detector, it is for a "front-of-face" target only, but it's pretty slim, fast and able to be tweaked easily.  
+With only 2 libraries (cv2 and time) you can run this!  Very few scripts exist out there that are lean enough with few dependencies to do reasonable facial detection.  Most require you to install bulky libraries or are simply too CPU intensive for a Raspberry Pi.  After installing and trying lots of these scripts (with little or no success) I found two that when merged with some edits will get the job done.  This is basic face detection folks, but it's pretty decent and very tweakable. 
 
 # Code citations:  
 - Picamera activation snippet from Adrian's Picamera + OpenCV + Python + Raspberry Pi 
